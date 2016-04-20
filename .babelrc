@@ -1,0 +1,30 @@
+{
+  "presets": ["es2015", "react"],
+  "plugins": [
+    "syntax-async-functions",
+    "syntax-object-rest-spread",
+    "syntax-trailing-function-commas",
+    "transform-object-rest-spread",
+    "transform-regenerator",
+    "transform-class-properties",
+    "transform-react-constant-elements",
+    "transform-react-jsx",
+    "transform-runtime"
+  ],
+  "env": {
+    "development/client": {
+      "plugins": [
+        ["react-transform", {
+          "transforms": [{
+            "transform": "react-transform-hmr",
+            "imports": ["react"],
+            "locals": ["module"]
+          }, {
+            "transform": "react-transform-catch-errors",
+            "imports": ["react", "redbox-react"]
+          }]
+        }]
+      ]
+    }
+  }
+}

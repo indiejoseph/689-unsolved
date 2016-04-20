@@ -1,0 +1,79 @@
+{
+  "name": "what-the-flux",
+  "version": "1.0.0",
+  "description": "This project is a demo code for Javascript@HK Meetup #8",
+  "main": "index.js",
+  "scripts": {
+    "start": "better-npm-run start"
+  },
+  "author": "Joseph Cheng / [@indiejoseph](https://github.com/indiejoseph)",
+  "betterScripts": {
+    "start": {
+      "command": "./node_modules/.bin/webpack-dev-server --hot --progress --no-info --inline --colors --host 0.0.0.0 -d --config webpack.config.babel.js",
+      "env": {
+        "NODE_ENV": "development"
+      }
+    }
+  },
+  "license": "ISC",
+  "dependencies": {
+    "babel-polyfill": "^6.7.4",
+    "classnames": "^2.2.3",
+    "colors": "^1.1.2",
+    "flux": "^2.1.1",
+    "immutable": "^3.8.1",
+    "keymirror": "^0.1.1",
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1",
+    "react-immutable-proptypes": "^1.7.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "babel-cli": "^6.7.5",
+    "babel-core": "^6.7.6",
+    "babel-eslint": "^6.0.2",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-react-transform": "^2.0.2",
+    "babel-plugin-syntax-async-functions": "^6.5.0",
+    "babel-plugin-syntax-object-rest-spread": "^6.5.0",
+    "babel-plugin-syntax-trailing-function-commas": "^6.5.0",
+    "babel-plugin-transform-class-properties": "^6.6.0",
+    "babel-plugin-transform-object-rest-spread": "^6.6.5",
+    "babel-plugin-transform-react-constant-elements": "^6.5.0",
+    "babel-plugin-transform-react-jsx": "^6.7.5",
+    "babel-plugin-transform-regenerator": "^6.6.5",
+    "babel-plugin-transform-runtime": "^6.7.5",
+    "babel-polyfill": "^6.7.4",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-register": "^6.7.2",
+    "babel-runtime": "^6.6.1",
+    "better-npm-run": "0.0.8",
+    "browser-sync": "^2.11.2",
+    "clean-webpack-plugin": "^0.1.8",
+    "css-loader": "^0.23.1",
+    "eslint": "^2.7.0",
+    "eslint-plugin-babel": "^3.2.0",
+    "eslint-plugin-react": "^4.3.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "html-loader": "^0.4.3",
+    "html-webpack-plugin": "^2.16.0",
+    "json-loader": "^0.5.4",
+    "lodash": "^4.8.2",
+    "node-sass": "^3.4.2",
+    "postcss-loader": "^0.8.2",
+    "raw-loader": "^0.5.1",
+    "react-hot-loader": "^1.3.0",
+    "react-transform-catch-errors": "^1.0.2",
+    "react-transform-hmr": "^1.0.4",
+    "redbox-react": "^1.2.3",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.14",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-hot-middleware": "^2.10.0"
+  }
+}
