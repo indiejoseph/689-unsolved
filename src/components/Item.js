@@ -63,12 +63,12 @@ export default class UnsolvedItem extends Component {
               {text}<br/>
               <small>{subHeader}</small>
             </label>
+            {input}
           </div>
           <div className="view-action">
             <button className="destroy fa fa-times" onClick={this._onDestroyClick.bind(this)} />
           </div>
         </div>
-        {input}
       </li>
     );
   }

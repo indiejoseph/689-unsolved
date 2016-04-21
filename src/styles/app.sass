@@ -110,10 +110,21 @@ html, body
       margin: 0
       list-style-type: none
 
+      &.editing
+        & > .view
+          & > .view-text
+            & > label
+              display: none
+
       .view
         @extend .flex-container
         flex-direction: row
         padding: .25em 0
+
+        input.edit
+          width: 100%
+          border: none
+          color: $text-color
 
         & > .view-input,
         & > .view-text,
